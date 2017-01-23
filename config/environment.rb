@@ -12,5 +12,4 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'thawing-dusk-43465.herokuapp.com',
   :authentication => :plain,
 }
-
 ActionMailer::Base.delivery_method = :smtp
