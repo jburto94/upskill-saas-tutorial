@@ -13,27 +13,26 @@
  *= require_tree .
  *= require_self
  */
- 
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-@import "font-awesome-sprockets";
-@import "font-awesome";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
-
-//Typography Styles
+// Typography Styles
 h1, h2, h3 {
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 //Background Gradient
-.navbar, .home-heading { 
+.navbar, .home-heading, .home-callout { 
   //Gradient provided by @_ighosh at uiGradients.com
   background: #41295a; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #41295a , #2F0743); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #41295a , #2F0743); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}        
+}     
 
-//Nav Styles
+// Nav Styles
 .navbar {
   border: none;
 }
@@ -42,7 +41,8 @@ h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
-.navbar-default .navbar-brand, 
+
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: white;
   &:hover {
@@ -58,22 +58,28 @@ h1, h2, h3 {
 .navbar-default .navbar-toggle {
   border: 2px solid white;
   &:hover, &:focus {
-    background-color: #49215a;
-    opacity: 0.75;
+    background-color: #00c6ff;
   }
 }
 
-
-//Homepage Styles
-.home-heading {
+// Home Page Styles
+.home-callout {
   color: white;
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
 
-.alert-notice {
-  display: none;
+.flash-container {
+  position: absolute;
+  width: 100%;
+}
+
+.alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: -14px;
 }
 
 .home-signup-links {
