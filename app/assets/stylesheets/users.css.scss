@@ -14,9 +14,9 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: 2px solid #2e6da4;
+  border: 2px solid #41295a;
   border-radius: 4px;
-  background-color: #337ab7;
+  background-color: #41295a;
   color: white;
   text-align: center;
 }
@@ -29,4 +29,16 @@
 .well.profile-contact-info {
   background-color: #5bc0de;
   border-color: #46b8da;
+}
+
+// User Index Page Styles
+
+.user-index-avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+.well.white-bg {
+  background-color: white;
 }
